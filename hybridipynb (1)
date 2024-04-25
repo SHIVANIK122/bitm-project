@@ -1,0 +1,213 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ec6f66f4-bbec-4e30-826c-e147f7f8d8ca",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "write a program to print hallow square pattren\n",
+    "samle input:4\n",
+    "out put:\n",
+    "****\n",
+    "*  *\n",
+    "*  *\n",
+    "****"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "ac4f0d3b-8d9d-480c-aad6-12eef6e8e31b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "****\n",
+      "*   *\n",
+      "*   *\n",
+      "****\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=4\n",
+    "for i in range(4):\n",
+    "    if i==0 or i==n-1:\n",
+    "        print('*'*n)\n",
+    "    else:\n",
+    "        print('*' + ' '*(n-1) +  '*')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "64ad09e3-4049-4da3-af39-1d441a52e943",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "we are in parent class\n",
+      "we are in child class\n"
+     ]
+    }
+   ],
+   "source": [
+    "class parent:\n",
+    "    def a(self):\n",
+    "        print(\"we are in parent class\")\n",
+    "class child(parent):\n",
+    "    def b(self):\n",
+    "        print(\"we are in child class\")\n",
+    "obj2=child()\n",
+    "obj2.a()\n",
+    "obj2.b()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "5dbc32e1-bd1a-41de-87ff-f7c48468621e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i am shivani\n",
+      "i am nithu\n",
+      "my dad\n"
+     ]
+    }
+   ],
+   "source": [
+    "class shivani:\n",
+    "    def a(self):\n",
+    "        print(\"i am shivani\")\n",
+    "class nithu:\n",
+    "    def b(self):\n",
+    "        print(\"i am nithu\")\n",
+    "class mom(shivani,nithu):\n",
+    "    def c(self):\n",
+    "        print(\"my dad\")\n",
+    "obj=mom()\n",
+    "obj.a()\n",
+    "obj.b()\n",
+    "obj.c()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "0861ae8a-07cc-4fb7-a178-35a1a6065a6d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "we are in grandfathers class\n",
+      "we are in fathers class\n",
+      "we are in child class\n"
+     ]
+    }
+   ],
+   "source": [
+    "class grandfather:\n",
+    "    def grand(self):\n",
+    "        print(\"we are in grandfathers class\")\n",
+    "class father(grandfather):\n",
+    "    def dad(self):\n",
+    "        print(\"we are in fathers class\")\n",
+    "class child(father):\n",
+    "    def son(sekf):\n",
+    "        print(\"we are in child class\")\n",
+    "o=child()\n",
+    "o.grand()\n",
+    "o.dad()\n",
+    "o.son()      "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "8f25ed5d-f95d-4b23-b09a-76b1507ab44f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "grandfather\n"
+     ]
+    }
+   ],
+   "source": [
+    "class grandfather:\n",
+    "    def grand (self):\n",
+    "        print(\"grandfather\")\n",
+    "class father(grandfather):\n",
+    "    def dad(self):\n",
+    "        print(\"my dad\")\n",
+    "class mother(father):\n",
+    "    def mom(self):\n",
+    "        print(\"my mom\")\n",
+    "class child(mother):\n",
+    "    def daughter(self):\n",
+    "        print(\"daughter\")\n",
+    "class child2(father):\n",
+    "    def son():\n",
+    "        print(\"we are in sons class\")\n",
+    "class child3(mother):\n",
+    "    def mymom():\n",
+    "        print(\"my life\")\n",
+    "c=child()\n",
+    "c.grand()\n",
+    "\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2dd389cf-23fc-40dc-8f68-81cc0fa9c309",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "57e2b00b-67f9-4132-83b6-ea9270747dce",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
